@@ -10,11 +10,8 @@ export function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Save user data to localStorage
     localStorage.setItem("userEmail", email);
     localStorage.setItem("userPassword", password);
-
-    // Redirect to SignIn page
     navigate("/signin");
   };
 
